@@ -1,0 +1,44 @@
+Jun 09 20:49:01.907 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 09 20:49:01.907 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 38401.
+Jun 09 20:49:01.915 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 20:49:01.916 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nagito/GNS3/projects/SAE réseau/project-files/dynamips 
+Jun 09 20:49:01.916 GENERAL: working_dir=/home/nagito/GNS3/projects/SAE réseau/project-files/dynamips
+Jun 09 20:49:01.916 HYPERVISOR: exec_cmd: hypervisor working_dir /home/nagito/GNS3/projects/SAE réseau/project-files/dynamips/9047c7b8-c0fc-4764-bd88-ee3b16566e62 
+Jun 09 20:49:01.916 GENERAL: working_dir=/home/nagito/GNS3/projects/SAE réseau/project-files/dynamips/9047c7b8-c0fc-4764-bd88-ee3b16566e62
+Jun 09 20:49:01.916 HYPERVISOR: exec_cmd: vm create R2 2 c3600 
+Jun 09 20:49:01.916 VM: VM R2 created.
+Jun 09 20:49:01.917 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jun 09 20:49:01.917 HYPERVISOR: exec_cmd: c3600 get_mac_addr R2 
+Jun 09 20:49:01.917 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nagito/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 09 20:49:01.917 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 20:49:01.917 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60693818 
+Jun 09 20:49:01.918 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 09 20:49:01.918 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 20:49:01.918 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 NM-4E 
+Jun 09 20:49:01.968 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nagito/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 09 20:49:24.207 HYPERVISOR: exec_cmd: vm set_ios R2 /home/nagito/GNS3/images/IOS/c3640-ik9o3s-mz.124-25c.image 
+Jun 09 20:50:42.518 HYPERVISOR: exec_cmd: nio create_udp udp-d745f261-a657-4c93-a4a0-aae15827f1e7 10008 127.0.0.1 10009 
+Jun 09 20:50:42.729 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-d745f261-a657-4c93-a4a0-aae15827f1e7 
+Jun 09 20:50:42.730 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 20:50:55.978 HYPERVISOR: exec_cmd: nio create_udp udp-beb686d0-6af1-4a3a-a866-9ab6a691bf5d 10012 127.0.0.1 10013 
+Jun 09 20:50:55.980 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-beb686d0-6af1-4a3a-a866-9ab6a691bf5d 
+Jun 09 20:50:55.980 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 20:51:46.742 HYPERVISOR: exec_cmd: nio create_udp udp-fb26c5f9-24cb-4d3e-b058-7238c75fccd1 10022 127.0.0.1 10023 
+Jun 09 20:51:46.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 2 udp-fb26c5f9-24cb-4d3e-b058-7238c75fccd1 
+Jun 09 20:51:46.744 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 21:03:09.249 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 09 21:03:09.249 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/nagito/GNS3/projects/SAE réseau/project-files/dynamips/c3640-ik9o3s-mz.124-25c.image-128.ghost 
+Jun 09 21:03:09.249 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 21:03:09.250 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Jun 09 21:03:09.250 HYPERVISOR: exec_cmd: vm start R2 
+Jun 09 21:03:14.501 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 21:03:14.502 HYPERVISOR: exec_cmd: vm stop R2 
+Jun 09 21:03:14.634 VM: VM R2 shutdown.
+Jun 09 21:03:14.635 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 09 21:03:33.699 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 09 21:03:33.700 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jun 09 21:03:33.701 HYPERVISOR: exec_cmd: vm delete R2 
+Jun 09 21:03:33.701 VM: VM R2 destroyed.
+Jun 09 21:03:33.701 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 09 21:03:34.089 HYPERVISOR: Stopped.
+Jun 09 21:03:34.089 GENERAL: reset done.
