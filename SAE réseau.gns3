@@ -169,6 +169,15 @@
                 "x": 191,
                 "y": 68,
                 "z": 2
+            },
+            {
+                "drawing_id": "2ac5f95c-2e2b-48b2-9b66-1ab802d80a29",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg width=\"122\" height=\"25\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">170.50.192.112</text></svg>",
+                "x": 0,
+                "y": 147,
+                "z": 2
             }
         ],
         "links": [

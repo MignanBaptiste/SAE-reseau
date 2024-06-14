@@ -1,7 +1,7 @@
 # SAE-reseau
-
+Mignan Baptiste - Hun Valentin
 ### Instruction
-Après avoir répati l'adresse en sous-réseau comme présenter sur la fichier gns3,
+Après avoir répati l'adresse en sous-réseau comme présenter sur la fichier gns3, nous avons configurer les interfaces des routeurs, utiliser le protocole RIP et DHCP puis finir par s'occuper du firewall
 
 ### Configuration des interfaces des routeurs.
 
