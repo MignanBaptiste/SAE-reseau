@@ -69,8 +69,29 @@ ip address 170.50.192.254 255.255.255.128
 no shutdown
 end
 
+configure terminal
+interface e0/3
+ip address 170.50.192.113 255.255.255.240
+no shutdown
+end
+
 wr
 
+### R4
+
+configure terminal
+interface e0/0
+ip address 170.50.192.114 255.255.255.240
+no shutdown
+end
+
+configure terminal
+interface e0/1
+ip address 10.0.0.1 255.255.255.0
+no shutdown
+end
+
+wr
 
 ### Protocole RIP
 
@@ -109,6 +130,19 @@ no auto-summary
 network 170.50.192.80
 network 170.50.192.128
 network 170.50.192.96
+network 170.50.192.112
+end
+
+wr
+
+### R4
+
+configure terminal
+router rip
+version 2
+no auto-summary
+network 10.0.0.0
+network 170.50.192.112
 end
 
 wr
@@ -161,9 +195,24 @@ network 170.50.192.80 255.255.255.240
 default-router 170.50.192.82
 end
 
+configure terminal
+service dhcp
+ip dhcp pool land
+network 170.50.192.112 255.255.255.240
+default-router 170.50.192.113
+end
+
+configure terminal
+service dhcp
+ip dhcp pool DMZ
+network 10.0.0.0 255.255.255.0
+default-router 10.0.0.1
+end
+
 ip dhcp excluded-address 170.50.192.1 170.50.192.10
 ip dhcp excluded-address 170.50.192.33 170.50.192.42
 ip dhcp excluded-address 170.50.192.129 170.50.192.38
+ip dhcp excluded-address 10.0.0.11 10.0.0.254
 
 ### R2
 
@@ -179,4 +228,30 @@ interface e0/2
 ip helper-address 170.50.192.97
 end
 
+configure terminal
+interface e0/3
+ip helper-address 170.50.192.97
+end
+
+### R4
+
+configure terminal
+interface e0/1
+ip helper-address 170.50.192.97
+end
+
 ### FireWall
+
+### R4
+
+configure terminal
+ip access-list extended pingACL
+permit icmp any 10.0.0.0 0.0.0.255
+deny icmp 10.0.0.0 0.0.0.255 any
+permit ip any any
+exit
+inter e0/1
+ip access-group pingACL in
+end
+
+wr
