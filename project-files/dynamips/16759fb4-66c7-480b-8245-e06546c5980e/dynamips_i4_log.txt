@@ -1,0 +1,19 @@
+Jun 15 16:58:04.385 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 15 16:58:04.385 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 46475.
+Jun 15 16:58:04.394 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 15 16:58:04.394 HYPERVISOR: exec_cmd: hypervisor working_dir /home/valentin/Documents/IUT/BUT1/SAE/SAE203_reseau/SAE-reseau/project-files/dynamips 
+Jun 15 16:58:04.394 GENERAL: working_dir=/home/valentin/Documents/IUT/BUT1/SAE/SAE203_reseau/SAE-reseau/project-files/dynamips
+Jun 15 16:58:04.394 HYPERVISOR: exec_cmd: ethsw create Finances 
+Jun 15 16:58:04.550 HYPERVISOR: exec_cmd: nio create_udp udp-2aadc46b-2f36-4634-9e1b-9e1d7e436b0b 10000 127.0.0.1 10001 
+Jun 15 16:58:04.550 HYPERVISOR: exec_cmd: ethsw add_nio Finances udp-2aadc46b-2f36-4634-9e1b-9e1d7e436b0b 
+Jun 15 16:58:04.565 HYPERVISOR: exec_cmd: ethsw set_access_port Finances udp-2aadc46b-2f36-4634-9e1b-9e1d7e436b0b 1 
+Jun 15 16:58:05.465 HYPERVISOR: exec_cmd: nio create_udp udp-2f2faa2a-6c7f-4b12-8552-019e438baadc 10031 127.0.0.1 10030 
+Jun 15 16:58:05.465 HYPERVISOR: exec_cmd: ethsw add_nio Finances udp-2f2faa2a-6c7f-4b12-8552-019e438baadc 
+Jun 15 16:58:05.467 HYPERVISOR: exec_cmd: ethsw set_access_port Finances udp-2f2faa2a-6c7f-4b12-8552-019e438baadc 1 
+Jun 15 16:58:05.510 HYPERVISOR: exec_cmd: nio create_udp udp-a3b26906-027c-470b-ba61-92400bdcad32 10033 127.0.0.1 10032 
+Jun 15 16:58:05.510 HYPERVISOR: exec_cmd: ethsw add_nio Finances udp-a3b26906-027c-470b-ba61-92400bdcad32 
+Jun 15 16:58:05.528 HYPERVISOR: exec_cmd: ethsw set_access_port Finances udp-a3b26906-027c-470b-ba61-92400bdcad32 1 
+Jun 15 17:16:45.892 HYPERVISOR: exec_cmd: ethsw delete Finances 
+Jun 15 17:16:45.938 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 15 17:16:46.275 HYPERVISOR: Stopped.
+Jun 15 17:16:46.276 GENERAL: reset done.
